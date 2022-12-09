@@ -34,7 +34,7 @@ public class FireController {
             OkHttpClient client = new OkHttpClient();
             String url_map1="https://www.google.com/maps/dir/%s/%s";
             String url_map2= String.format(url_map1,infoaddress.getFireCenter(),infoaddress.getAddress());
-            String url_bot1="https://api.telegram.org/bot5531809361:AAH9n3sSuOvz50chc1eUVLAztUFoDxO49Qc/sendMessage?chat_id=-803281853&text=%s";
+            String url_bot1="https://api.telegram.org/bot5531809361/sendMessage?chat_id=&text=%s";
             String url_bot2=String.format(url_bot1,url_map2);
             Request request = new Request.Builder()
                     .url(url_bot2)
